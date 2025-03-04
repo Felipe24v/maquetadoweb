@@ -1,0 +1,105 @@
+:root{
+    --tamañotitulos:20px;
+    --tamañoparrafos:15px;
+    --colortitulos: #000;
+    --tamañosubtitulos: 15px;
+    --colorparrafos: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    /* Elimina el padding por defecto */
+    margin: 0;
+    /* Elimina el margen por defecto */
+    display: flex;
+    /* Hace que los elementos de la lista se alineen en una fila */
+}
+
+nav ul li {
+    margin-right: 50px;
+    /* Añade espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: #000;
+    /* Cambia el color del texto de los enlaces */
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+    /* Cambia el color del texto cuando el enlace es hover */
+}
+
+nav ul {
+    justify-content: center;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+p.parrafo { /* article texto */
+    font-size: var(--tamañoparrafos);
+    color: var(--colorparrafos);
+    display: flex;
+    justify-content: flex-start;
+    text-align: justify;
+    flex: 2;
+}
+
+footer h3 { /* footer titulo */
+    font-size: var(--tamañotitulos);
+    text-align: center;
+}
+
+p.pie { /* footer texto */
+    font-size: var(--tamañosubtitulos);
+    text-align: justify;
+}
+
+aside ul {
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex: 1;
+}
+
+h1.tituloaside { /* titulo aside */
+    display: flex;
+    flex: 1;
+    text-align: center;
+}
+
+p.textoaside {
+    display: flex;
+    flex: 1;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+body {
+    display: grid;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+}
+
+section {
+    padding: 20px;
+    text-align: justify;
+}
+
+main{
+    display: flex;
+    flex: 1;
+    gap: 30px; /* separacion entre article y aside */
+}
+
